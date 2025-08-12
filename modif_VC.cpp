@@ -51,22 +51,22 @@ int length(double ip_value, string ip_unit, string op_unit) {
     double temp_value{0};
     double op_value{0};
 
-        // Converting the input value into a standard value for easier calculation.
-        // Here it is meters.
-        if (ip_unit == "m" or op_unit == "meter" or op_unit == "meters") {
-            temp_value = ip_value ;
-        } else if (ip_unit == "km" or op_unit == "kilometer" or op_unit == "kilometers") {
-            temp_value = ip_value * 1000;
-        } else if (ip_unit == "in" or op_unit == "inch" or op_unit == "inches") {
-            temp_value = ip_value / 39.3701;
-        } else if (ip_unit == "ft" or op_unit == "foot" or op_unit == "feet") {
-            temp_value = ip_value / 3.281;
-        } else {
-            // if the input unit is outside the given options, it shows alert.
-            cout << "Please enter value correctly\n"
-                 << "> The unit should in either 'm', 'km', 'in' or 'ft'.\n"
-                 << endl;
-        }
+    // Converting the input value into a standard value for easier calculation.
+    // Here it is meters.
+    if (ip_unit == "m" or op_unit == "meter" or op_unit == "meters") {
+        temp_value = ip_value ;
+    } else if (ip_unit == "km" or op_unit == "kilometer" or op_unit == "kilometers") {
+        temp_value = ip_value * 1000;
+    } else if (ip_unit == "in" or op_unit == "inch" or op_unit == "inches") {
+        temp_value = ip_value / 39.3701;
+    } else if (ip_unit == "ft" or op_unit == "foot" or op_unit == "feet") {
+        temp_value = ip_value / 3.281;
+    } else {
+        // if the input unit is outside the given options, it shows alert.
+        cout << "Please enter value correctly\n"
+             << "> The unit should in either 'm', 'km', 'in' or 'ft'.\n"
+        << endl;
+    }
 
 
     // The input is verified and converted into a standard value.
@@ -84,7 +84,7 @@ int length(double ip_value, string ip_unit, string op_unit) {
     } else {
         cout << "Please enter value correctly\n"
              << "> The unit should in either 'm', 'km', 'in' or 'ft'."
-             << endl;
+        << endl;
     }
     // Converted value in the required units is displayed.
     cout << "Value in " << op_unit << " = " << fixed << setprecision(2)
