@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-
 using namespace std;
 
 int mass(double ip_value, string ip_unit, string op_unit) {
@@ -203,3 +202,4 @@ int main() {
         }
     }
 }
+
