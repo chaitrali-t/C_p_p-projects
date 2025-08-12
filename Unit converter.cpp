@@ -17,9 +17,9 @@ int mass(double ip_value, string ip_unit, string op_unit) {
     } else if (ip_unit == "oz" or ip_unit == "ounce" or ip_unit == "ounces") {
         temp_value = ip_value / 35.274;
     } else {
-        // If the input unit is outside the given options, it shows alert.
+        // If the input unit is outside the given options, it shows an alert.
         cout << "Please enter value correctly\n"
-             << "> The unit should in either 'kg', 'g', 'lb' or 'oz'.\n"
+             << "> The unit should be in either 'kg', 'g', 'lb' or 'oz'.\n"
              << endl;
     }
 
@@ -36,7 +36,7 @@ int mass(double ip_value, string ip_unit, string op_unit) {
         op_value = temp_value * 35.274;
     } else {
         cout << "Please enter value correctly\n"
-             << "> The unit should in either 'kg', 'g', 'lb' or 'oz'."
+             << "> The unit should be in either 'kg', 'g', 'lb' or 'oz'."
              << endl;
     }
     // Converted value in the required units is displayed.
@@ -51,7 +51,7 @@ int length(double ip_value, string ip_unit, string op_unit) {
     double op_value{0};
 
     // Converting the input value into a standard value for easier calculation.
-    // Here it is meters.
+    // Here it is in meters.
     if (ip_unit == "m" or op_unit == "meter" or op_unit == "meters") {
         temp_value = ip_value ;
     } else if (ip_unit == "km" or op_unit == "kilometer" or op_unit == "kilometers") {
@@ -61,9 +61,9 @@ int length(double ip_value, string ip_unit, string op_unit) {
     } else if (ip_unit == "ft" or op_unit == "foot" or op_unit == "feet") {
         temp_value = ip_value / 3.281;
     } else {
-        // if the input unit is outside the given options, it shows alert.
+        // if the input unit is outside the given options, it shows an alert.
         cout << "Please enter value correctly\n"
-             << "> The unit should in either 'm', 'km', 'in' or 'ft'.\n"
+             << "> The unit should be in either 'm', 'km', 'in' or 'ft'.\n"
         << endl;
     }
 
@@ -82,7 +82,7 @@ int length(double ip_value, string ip_unit, string op_unit) {
         op_value = temp_value * 3.281;
     } else {
         cout << "Please enter value correctly\n"
-             << "> The unit should in either 'm', 'km', 'in' or 'ft'."
+             << "> The unit should be in either 'm', 'km', 'in' or 'ft'."
         << endl;
     }
     // Converted value in the required units is displayed.
@@ -106,7 +106,7 @@ int temperature (double ip_value, string ip_unit, string op_unit) {
     } else {
         // If the input unit is outside the given options, it shows alert.
         cout << "Please enter value correctly\n"
-             << "> The unit should in either 'c', 'f' or 'k'.\n"
+             << "> The unit should be in either 'c', 'f' or 'k'.\n"
              << endl;
         }
         // The input is verified and converted into a standard value.
@@ -120,7 +120,7 @@ int temperature (double ip_value, string ip_unit, string op_unit) {
                 op_value = temp_value + 273.15;
         } else {
             cout << "Please enter value correctly\n"
-                << "> The unit should in either 'c', 'f' or 'k'.\n"
+                << "> The unit should be in either 'c', 'f' or 'k'.\n"
             << endl;
         }
         // Converted value in the required units is displayed.
@@ -140,7 +140,7 @@ int main() {
     // until the user wants to exit or stop.
     while (option != 4) {
         // This prints out all the available options
-        // for convertion
+        // for conversion
         cout << "Available conversions:\n"
              << "1. Mass\n"
              << "2. Height\n"
@@ -156,7 +156,7 @@ int main() {
             cin >> ip_value >> ip_unit;
             if (ip_value < 0) {
                 // Evaluating the input value and
-                // to show alert for negative value.
+                // to show alert for a negative value.
                 cout << "Please enter value correctly\n"
                      << "> The value should be above.\n"
                      << endl;
