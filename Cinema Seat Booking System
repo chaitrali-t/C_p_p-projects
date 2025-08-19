@@ -25,7 +25,7 @@ void bookSingleSeat() {
     cin >> r >> c;
 
     // Check if within range and seat is available
-    if ((r >= 0 && r < ROWS) && (c >= 0 && c < COLS) && seats[r][c] == 0)) {
+    if ((r >= 0 && r < ROWS) && (c >= 0 && c < COLS) && seats[r][c] == 0) {
         seats[r][c] = 1;
         cout << "Seat booked successfully.\n";
     } else {
