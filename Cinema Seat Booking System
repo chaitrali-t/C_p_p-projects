@@ -106,13 +106,13 @@ int main() {
     int choice;
 
     while (true) {
-        cout << "\n----- Cinema Seat Booking Menu -----\n";
-             << "1. View Seat Layout\n";
-             << "2. Book a Single Seat\n";
-             << "3. Book a Block of Seats\n";
-             << "4. Cancel a Seat Booking\n";
-             << "5. Display Available Seats Only\n";
-             << "6. Exit\n";
+        cout << "\n----- Cinema Seat Booking Menu -----\n"
+             << "1. View Seat Layout\n"
+             << "2. Book a Single Seat\n"
+             << "3. Book a Block of Seats\n"
+             << "4. Cancel a Seat Booking\n"
+             << "5. Display Available Seats Only\n"
+             << "6. Exit\n"
              << "Enter your choice (1 to 6) to select a function: ";
         cin >> choice;
 
